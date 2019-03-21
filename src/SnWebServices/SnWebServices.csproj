@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">Any CPU</Platform>
-    <ProjectGuid>{F5C6C649-C989-43FC-ABF9-63FAE1DCD924}</ProjectGuid>
+    <ProjectGuid>{8FDFF0C3-AACD-4BC3-9CF3-41BB0CF7586D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HtmlUtils</RootNamespace>
-    <AssemblyName>Erwine.Leonard.T.SnPowerShell.HtmlUtils</AssemblyName>
+    <RootNamespace>SnWebServices</RootNamespace>
+    <AssemblyName>Erwine.Leonard.T.SnPowerShell.SnWebServices</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -21,7 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>Module\Debug\Erwine.Leonard.T.SnPowerShell.HtmlUtils.XML</DocumentationFile>
+    <DocumentationFile>Module\Debug\Erwine.Leonard.T.SnPowerShell.SnWebServices.XML</DocumentationFile>
     <!-- <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet> -->
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Any CPU' ">
@@ -31,7 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>Module\Release\Erwine.Leonard.T.SnPowerShell.HtmlUtils.XML</DocumentationFile>
+    <DocumentationFile>Module\Release\Erwine.Leonard.T.SnPowerShell.SnWebServices.XML</DocumentationFile>
     <!-- <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet> -->
   </PropertyGroup>
   <ItemGroup>
@@ -79,7 +79,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Content Include="HtmlUtils.ps1">
+    <Content Include="SnWebServices.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\Settings.settings">
@@ -87,10 +87,8 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Compile Include="UriParserForm.cs" />
-    <Compile Include="UriParserDataSet.cs" />
-    <Compile Include="UriSchemaRow.cs" />
-    <Compile Include="UriSchemeTable.cs" />
+    <Compile Include="SnRestAPIBase.cs" />
+    <Compile Include="SnRestTableAPI.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
